@@ -35,11 +35,12 @@ h1 {
    
     }
 
-    ul {
-     display: flex;
+    nav ul {
+     display: grid;
      list-style: none; /*para deixar sem os pontinhos marcados*/
-     height: 50px;
+     width: 100%;
      align-items: center;
+     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
     
     a{
