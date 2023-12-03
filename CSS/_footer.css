@@ -38,7 +38,7 @@ footer > div > form > input {
 }
 footer > div > form > input::placeholder {
 
-    color:var(--text-primary);
+    color:var(--text-primary)
     font-size: 15px;
     font-weight: 900;
     letter-spacing: -0.3px;
@@ -78,4 +78,5 @@ footer > div > form > button {
     font-weight: 500;
     text-transform: uppercase;
     text-align: right;
+   
     }

@@ -22,9 +22,5 @@ header > p{
     max-width: 650px;
     width: 100%;
     
-}
-
-@media screen and (max-width:800px) {
-    /* serve pra auxiliar na resposividade de acordo com que quero*/
     
 }
