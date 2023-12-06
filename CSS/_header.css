@@ -1,36 +1,69 @@
 header {
-    background: url("../images/header.jpeg"), lightgray 50% / cover no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    min-height: 600px;
-    /* margin-top: -90px ; */
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
+  position: relative;
 }
 
+.header__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  object-position: center;
+}
 
-header > h2{
-    color:var(--color-secundary);
+.container__header {
+  height: 100%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+
+.container__header h2 {
+  color: var(--color-secondary);
+  font-size: 16rem;
+  font-family: var(--font-primary);
+}
+
+.container__header .testimonials-title {
+  font-size: 11rem;
+}
+
+.container__header p {
+  color: var(--text-primary);
+  font-size: 2rem;
+  font-weight: 400;
+  max-width: 60rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .container__header h2 {
     font-size: 12rem;
-    font-weight: 900;
-    
+  }
+
+  .container__header .testimonials-title {
+    font-size: 7rem;
+  }
+  
+  .container__header p {
+    font-size: 1.8rem;
+    max-width: 50rem;
+  }
 }
 
-header > p{
-    color:var(--text-primary);
-    font-size: 20px;
-    font-weight: 400;
-    max-width: 650px;
-    width: 100%;
-    
-}
+@media screen and (max-width: 460px) {
+  .container__header h2 {
+    font-size: 6rem;
+  }
 
-@media screen and (max-width:800px) {
-    header h2{
-        font-size: 8rem;
-    }
-    /* serve pra auxiliar na resposividade de acordo com que quero*/
+  .container__header .testimonials-title {
+    font-size: 4rem;
+  }
+  
+  .container__header p {
+    font-size: 1.4rem;
+    max-width: 40rem;
+  }
 }

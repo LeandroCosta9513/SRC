@@ -1,65 +1,97 @@
-
-.s1{
-    position: relative;
-    width: 100%;
-    height: 715px;
-    padding-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.s1 > h4{
-    position: absolute;
-    font-size: 25px;
-    font-weight: 800;
-    width: 430px;
-    top: 150px;
-    left: 350px;
-}
-.s1 > p{
-    width: 494px;
-    font-size: 25px;
-    font-weight: 400;
+.section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 6rem;
 }
 
-.s1 > .p1{
-    position: absolute;
-    top: 280px;
-    left: 350px;
+.section1 .text {
+  font-size: 2.5rem;
+  font-weight: 800;
+  max-width: 40rem;
 }
-.s1 > .p2{
-    position: absolute;
-    top: 420px;
-    left: 35rem;
+
+.section1 .text small {
+  font-weight: 400;
+  display: block;
+  margin-top: 6rem;
 }
 
 .lines {
-    background: url("../images/linhas.svg") center no-repeat;
-    margin-left: 85rem;
-   
-}
-.pessoa {
-    margin-left: 200px;
-    height: 650px;
+  background-image: url(../images/linhas.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  max-width: 55rem;
 }
 
-.s2{
-    background-color:var(--color-secundary);
-    height: 600px;
-    display: flex;
+.pessoa {
+  display: block;
+  margin: 0 auto;
+}
+
+.section2 {
+  background: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem 2rem;
+}
+
+.section2 > h4 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.section3 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.section3 iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 50rem;
+}
+
+@media screen and (max-width: 800px) {
+  .section1 {
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    gap: 4rem;
+  }
+
+  .section1 .text {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .lines {
+    max-width: 40rem;
+  }
+
+  .pessoa {
+    max-width: 26rem;
+  }
 }
-.s2 > h4{
 
-    font-size: 30px;
-    font-weight: 800;
-}
+@media screen and (max-width: 460px) {
+  .section1 {
+    padding-bottom: 4rem;
+  }
 
-.s3{
+  .section1 .text {
+    font-size: 1.8rem;
+  }
 
-    height: 840px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .lines {
+    display: none;
+  }
+
+  .section2 h4 {
+    font-size: 2rem;
+  }
 }

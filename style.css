@@ -1,7 +1,5 @@
-@import "./CSS/_base.css";
-@import "./CSS/_variaveis.css";
-@import "./CSS/_header.css";
-@import "./CSS/_nav.css";
-@import "./CSS/_footer.css";
-
-  
+@import "./css/_variables.css";
+@import "./css/_base.css";
+@import "./css/_nav.css";
+@import "./css/_header.css";
+@import "./css/_footer.css";
