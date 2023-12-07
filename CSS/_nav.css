@@ -4,7 +4,7 @@
   max-width: 115rem;
   width: 100%;
   padding: 2rem;
-  position: absolute;
+  position: absolute;/* manter centralizado */
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -30,7 +30,7 @@
   display: block;
   margin-top: -0.5rem;
   color: var(--text-primary);
-  font-size: 0.4em;
+  font-size: 0.4em; /*pegando as propriedades da classe pai LOGO no caso definido em 4rem*/
   font-weight: 500;
 }
 
@@ -84,7 +84,7 @@
   height: 0.4rem;
   width: 3rem;
   transition: transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 0.2rem;
+  border-radius: 0.2rem; /*existem exemplos de menu burguer na internet*/
 }
 
 .menu-button::before {
