@@ -6,9 +6,10 @@ header {
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: -1;
-  object-fit: cover;
+  z-index: -1; /*ordem das camadas, dessa forma -1 está descendo pra uma camada atrás*/
+  object-fit: cover; /*cobrir a imagem com o tamanho sem comprimir a imagem*/
   object-position: center;
+  /*TEXT-WRAP - ORGANIZAÇÃO DOS TEXTOS*/
 }
 
 .container__header {
