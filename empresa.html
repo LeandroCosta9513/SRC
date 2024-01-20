@@ -15,11 +15,7 @@
           <span class="subtitle">Eventos</span>
         </h1>
       </a>
-      <input id="menu-toggle" type="checkbox" />
-      <label class="menu-button-container" for="menu-toggle">
-        <div class="menu-button"></div>
-      </label>
-      <ul class="menu">
+      <ul id="menu" class="desktop">
         <li>
           <a href="#" class="active">Empresa</a>
         </li>
@@ -36,6 +32,9 @@
           <a href="./contato.html">Contato</a>
         </li>
       </ul>
+      <button class="nav__menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
 
     <header>
@@ -62,13 +61,13 @@
       </section>
 
       <section class="section2">
-        <h4 class="container">Quem Confia no nosso trabalho</h4><!-- container foi definido aqui pois a section 2 necessitava de pegar pagina inteira e o container está limitando no css -->
+        <h4 class="container">Quem Confia no nosso trabalho</h4>
         <img src="./images/logos.png" alt="Logos de empresa parceiras" class="container" />
       </section>
 
       <section class="container section3">
         <iframe
-          src="https://www.youtube.com/embed/vLBsminw8sc?si=T94t-o6wft7C3Hzz"
+          src="https://www.youtube.com/embed/D8v9CG2bZ9o?si=TW4pSlZvQ6wcj6by"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -84,10 +83,10 @@
           Studi<span class="accent">on</span>
           <span class="subtitle">Eventos</span>
         </h2>
-        <form>
+        <form id="newslatter-form">
           <label>Receba News e
             promoçoes</label>
-          <input type="email" placeholder="Email" />
+          <input id="email" type="email" placeholder="Email" />
           <button type="submit">
             <img class="icon" src="./images/icons/send2.svg" alt="enviar">
           </button>
@@ -113,5 +112,10 @@
       <hr />
       <p class="container copyright">Studi<span>on</span> - Todos os direitos reservados</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
